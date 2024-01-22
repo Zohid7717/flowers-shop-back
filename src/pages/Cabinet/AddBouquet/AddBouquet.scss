@@ -1,0 +1,41 @@
+.add-bouquet {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    &>label {
+      background-color: #fff;
+      border: 1px solid #fff;
+      padding: 10px;
+      border-radius: 10px;
+
+      &:hover {
+        border-color: #BDBDBD;
+      }
+    }
+  }
+
+  &__right,
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  &__btns {
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    &>button{
+      padding: 5px 10px;
+    }
+  }
+}

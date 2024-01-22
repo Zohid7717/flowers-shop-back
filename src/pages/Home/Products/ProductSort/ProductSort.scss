@@ -1,0 +1,29 @@
+.product-sort {
+  width: 262px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+
+  &__price,
+  &__category,
+  &__items,
+  &__btn {
+    padding: 14px;
+    border-bottom: 1px solid #F2F2F2;
+  }
+
+  &__price-title,
+  &__category-title,
+  &__items-title {
+    color: #BDBDBD;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &__btn{
+    display: flex;
+    gap: 15px;
+    &>button{
+      width: 50%;
+    }
+  }
+}

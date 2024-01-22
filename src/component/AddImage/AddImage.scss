@@ -1,0 +1,54 @@
+.add-img {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #fff;
+
+  &:hover{
+    border: 1px solid #BDBDBD;
+  }
+  &>label{
+    width: max-content;
+  }
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    position: relative;
+
+    &:hover .add-img__del-btn {
+      background-color: rgba(0, 255, 255, 0.418);
+      transform: scale(1);
+    }
+
+    &>img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__del-btn {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    transition: 0.5s;
+    transform: scale(0);
+  }
+
+  &>button {
+    padding: 5px 10px;
+    border-radius: 3px;
+    width: max-content;
+  }
+}

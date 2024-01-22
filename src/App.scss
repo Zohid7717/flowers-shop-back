@@ -1,0 +1,80 @@
+.UBtn-active,
+.UBtn,
+.UBtn-disable {
+  font-size: 16px;
+  font-weight: 700;
+  align-items: center;
+  padding: 11px 0;
+  border-radius: 10px;
+  display: block;
+  transition: 0.3s;
+  border: 1px solid ;
+  background-color: #797979;
+}
+
+.UBtn-active,
+.UBtn{
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 8px 0px rgba(106, 174, 85, 0.692);
+  }
+
+  &:active {
+    background-color: transparent;
+    color: #6AAE55;
+    transform: translateY(0px);
+    box-shadow: 0px 0px 0px 0px rgba(106, 174, 85, 0.692);
+  }
+}
+
+.UBtn-active {
+  color: #FFF;
+  background-color: #6AAE55;
+  border-color:#6AAE55;
+}
+
+.UBtn {
+  color: #BDBDBD;
+  background-color: #6AAE55;
+  border-color:#BDBDBD;
+
+  &:hover {
+    color: #FFF;
+  }
+
+  &:active {
+    border-color: #6AAE55;
+    background-color: transparent;
+    color: #6AAE55;
+  }
+}
+
+.UBtn-disable{
+  color: #BDBDBD;
+  border-color:#BDBDBD;
+  cursor: default;
+}
+
+.green {
+  color: #6AAE55;
+}
+
+.mainLayout__container {
+  position: relative;
+  z-index: 10;
+}
+
+.desktop-crumb{
+  display: block;
+  @media (max-width: 616px){
+    display: none;
+  }
+}
+
+.mobile-crumb{
+  display: none;
+  @media (max-width: 616px){
+    padding: 0 15px;
+    display: block;
+  }
+}

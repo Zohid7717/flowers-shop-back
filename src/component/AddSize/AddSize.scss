@@ -1,0 +1,53 @@
+.add-size {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #fff;
+
+  &>h4 {
+    margin-bottom: 10px;
+  }
+
+  &__wrap {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  &__component {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+
+    &:hover {
+      border-color: #BDBDBD;
+    }
+
+    &>label:not(:first-child) {
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    &>label {
+      display: flex;
+      column-gap: 15px;
+    }
+  }
+
+  &__input {
+    border: 1px solid #E0E0E0;
+    padding: 5px 0px 5px 10px;
+    background: #FAFAFA;
+    border-radius: 5px;
+  }
+  &>button{
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    width: max-content;
+  }
+}

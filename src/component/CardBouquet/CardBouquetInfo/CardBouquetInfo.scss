@@ -1,0 +1,247 @@
+.bouquet-info {
+  width: 56.216%;
+  height: 508px;
+  display: flex;
+  flex-direction: column;
+
+  h4 {
+    color: #5B4A58;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 13px;
+  }
+
+  &>p {
+    color: #5B4A58;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 9px;
+  }
+
+  &__size-wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  &__sizes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__size {
+    border-radius: 10px;
+    background: #FFF;
+    border: 1px solid #fff;
+    padding: 9px 16px 11px;
+    transition: 0.5s;
+    width: 33%;
+    cursor: pointer;
+  }
+
+  &__size-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__size-text {
+    &>h5 {
+      color: var(--Gray-3, #828282);
+      font-family: Literal;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+
+  &__size-dot {
+    width: 20px;
+    height: 20px;
+    background-color: #F2F2F2;
+    border-radius: 50%;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 14px;
+      height: 14px;
+      display: block;
+      background-color: #E0E0E0;
+      border-radius: 50%;
+      transition: 0.5s;
+    }
+  }
+
+  &__composition {
+    margin-top: 20px;
+    padding: 17px 24px;
+    border-radius: 10px;
+    background-color: #FFF;
+    flex-grow: 1;
+
+    h6 {
+      width: fit-content;
+      color: #5B4A58;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      margin-bottom: 19px;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #5B4A58;
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+
+  }
+
+  &__composition-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+
+    li {
+      display: flex;
+      align-items: center;
+      color: #5B4A58;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 5px;
+        height: 5px;
+        background-color: #6AAE55;
+        border-radius: 50%;
+        margin-right: 13px;
+      }
+    }
+  }
+
+  &__count {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 21px 25px;
+    border-radius: 10px;
+    background: #FFF;
+
+    p {
+      width: 20px;
+      text-align: center;
+      color: #5B4A58;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%;
+    }
+  }
+
+  &__cart {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #FFF;
+    flex-grow: 1;
+    justify-content: space-between;
+
+    &>div {
+      padding: 0 15px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+
+  &__cart-text {
+    color: #6AAE55;
+    font-size: 16px;
+  }
+
+  &__cart-price {
+    color: #5B4A58;
+    font-size: 18px;
+  }
+
+  &__cart-btn {
+    display: flex;
+    padding-right: 34px;
+    padding-left: 34px;
+    gap: 18.9px;
+  }
+
+}
+
+.inc-bouquet,
+.dec-bouquet {
+  width: 21px;
+  height: 21px;
+  border-radius: 4px;
+  background: #E0E0E0;
+  position: relative;
+
+  &:hover {
+    background-color: #6AAE55;
+
+    &::after {
+      color: #FFF;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #5B4A58;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+  }
+}
+
+.inc-bouquet::after {
+  content: '+';
+}
+
+.dec-bouquet::after {
+  content: '-';
+}
+
+.active-dot {
+  &::after {
+    background-color: #6AAE55;
+  }
+}
+
+.active-label {
+  color: #5B4A58;
+  border: 1px solid #6AAE55;
+
+  h5 {
+    color: #5B4A58;
+  }
+}
+
+.over-line-text {
+  text-decoration: line-through;
+}

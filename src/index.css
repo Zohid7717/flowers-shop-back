@@ -1,0 +1,142 @@
+/*----Обнуление-------*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  background-color: #F9F8FB;
+}
+
+.fixed {
+  overflow: hidden;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+@font-face {
+  font-family: 'Literal';
+  src: url('./fonts/Literal-Bold.eot');
+  src: url('./fonts/Literal-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Literal-Bold.woff2') format('woff2'),
+    url('./fonts/Literal-Bold.woff') format('woff'),
+    url('./fonts/Literal-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Literal';
+  src: url('./fonts/Literal-Light.eot');
+  src: url('./fonts/Literal-Light.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Literal-Light.woff2') format('woff2'),
+    url('./fonts/Literal-Light.woff') format('woff'),
+    url('./fonts/Literal-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Literal';
+  src: url('./fonts/Literal-Regular.eot');
+  src: url('./fonts/Literal-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Literal-Regular.woff2') format('woff2'),
+    url('./fonts/Literal-Regular.woff') format('woff'),
+    url('./fonts/Literal-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Karton2';
+  src: url('./fonts/Karton2Regular.eot');
+  src: url('./fonts/Karton2Regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Karton2Regular.woff2') format('woff2'),
+    url('./fonts/Karton2Regular.woff') format('woff'),
+    url('./fonts/Karton2Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: Literal;
+  color: #5B4A58;
+  font-style: normal;
+  line-height: 120%;
+}

@@ -1,0 +1,12 @@
+.sort-items{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  &__show-more{
+    display: inline-flex;
+    width: fit-content;
+    font-size: 14px;
+    margin: auto;
+    background-color: transparent;
+  }
+}

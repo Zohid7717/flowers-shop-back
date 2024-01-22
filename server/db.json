@@ -1,0 +1,639 @@
+{
+  "bouquets": [
+    {
+      "id": 1,
+      "name": "Букет из 7 роз",
+      "category": "Монобукеты",
+      "date": "2023-05-01",
+      "composition": [
+        "Розы"
+      ],
+      "size": [
+        {
+          "size_name": "Малый",
+          "price": 381200
+        }
+      ],
+      "count": 20,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2021/09/%D0%91%D1%83%D0%BA%D0%B5%D1%82-%D0%B8%D0%B7-7-%D1%80%D0%BE%D0%B7-%D1%80%D0%BE%D0%B7%D0%BE%D0%B2%D1%8B%D0%B5-1.webp?ver=2"
+    },
+    {
+      "id": 2,
+      "name": "Букет «Загадка»",
+      "category": "Авторские",
+      "date": "2023-03-07",
+      "composition": [
+        "Каллы",
+        "Орхидеи",
+        "Кактус"
+      ],
+      "size": [
+        {
+          "size_name": "Малый",
+          "price": 811300
+        }
+      ],
+      "count": 22,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2021/09/%D0%91%D1%83%D0%BA%D0%B5%D1%82-%D0%BD%D0%B5%D0%B2%D0%B5%D1%81%D1%82%D1%8B-%D1%81-%D0%B0%D0%BC%D0%B0%D1%80%D0%B8%D0%BB%D0%BB%D0%B8%D1%81%D0%BE%D0%BC-%D0%B8-%D1%80%D0%BE%D0%B7%D0%BE%D0%B9-%D0%A1%D0%BA%D0%B0%D1%80%D0%BB%D0%B5%D1%82%D1%82-1.webp?ver=2"
+    },
+    {
+      "id": 3,
+      "name": "Свадебный букет «Скарлетт»",
+      "category": "Авторские",
+      "date": "2020-11-17",
+      "composition": [
+        "Розы",
+        "Гвоздики",
+        "Аммарилисы"
+      ],
+      "size": [
+        {
+          "size_name": "Малый",
+          "price": 635830
+        }
+      ],
+      "count": 21,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2021/10/%D0%97%D0%B0%D0%B3%D0%B0%D0%B4%D0%BA%D0%B0-%D1%81-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%BC%D0%B8.webp?ver=2"
+    },
+    {
+      "id": 4,
+      "name": "Букет «Градиент»",
+      "category": "Авторские",
+      "date": "2023-06-08",
+      "composition": [
+        "Розы",
+        "Розы Джульетта",
+        "Рускус"
+      ],
+      "size": [
+        {
+          "size_name": "Малый",
+          "price": 317690
+        },
+        {
+          "size_name": "Средний",
+          "price": 412997
+        },
+        {
+          "size_name": "Большой",
+          "price": 476535
+        }
+      ],
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2022/08/IMG-0297.webp?ver=2"
+    },
+    {
+      "id": 5,
+      "name": "Новогодняя композиция «Wish»",
+      "category": "Цветы в каробке",
+      "date": "2023-09-25",
+      "composition": [
+        "Нобилисы",
+        "Хлопок",
+        "Шишки",
+        "Декор"
+      ],
+      "size": [
+        {
+          "size_name": "Малый",
+          "price": 35410
+        },
+        {
+          "size_name": "Средний",
+          "price": 460330
+        },
+        {
+          "size_name": "Большой",
+          "price": 531150
+        }
+      ],
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2021/10/%D0%97%D0%B0%D0%B3%D0%B0%D0%B4%D0%BA%D0%B0-%D1%81-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%BC%D0%B8.webp?ver=2"
+    },
+    {
+      "id": 6,
+      "name": "Букет «Дивный сад»",
+      "category": "Авторские",
+      "date": "2023-04-27",
+      "composition": [
+        "Спрей розы",
+        "Гортензия "
+      ],
+      "size": [
+        {
+          "size_name": "Малый",
+          "price": 456490
+        },
+        {
+          "size_name": "Средний",
+          "price": 593437
+        },
+        {
+          "size_name": "Большой",
+          "price": 684735
+        }
+      ],
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2022/07/IMG_4831-min.webp?ver=2"
+    },
+    {
+      "id": 7,
+      "name": "Букет «Венеция»",
+      "category": "Монобукеты",
+      "date": "2023-06-17",
+      "composition": [
+        "Пионы "
+      ],
+      "size": [
+        {
+          "size_name": "Малый",
+          "price": 1644500
+        },
+        {
+          "size_name": "Средний",
+          "price": 2137850
+        },
+        {
+          "size_name": "Большой",
+          "price": 2466750
+        }
+      ],
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2022/06/7-pionov-1.webp?ver=2"
+    },
+    {
+      "id": 8,
+      "name": "Букет «Мессина»",
+      "category": "Монобукеты",
+      "date": "2023-09-15",
+      "composition": [
+        "Тюльпаны"
+      ],
+      "size": [
+        {
+          "size_name": "Малый",
+          "price": 767630
+        },
+        {
+          "size_name": "Средний",
+          "price": 997919
+        },
+        {
+          "size_name": "Большой",
+          "price": 1151445
+        }
+      ],
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2021/11/196.webp?ver=2"
+    },
+    {
+      "id": 9,
+      "name": "Букет «Любовный плен»",
+      "category": "Монобукеты",
+      "date": "2023-09-20",
+      "composition": [
+        "Розы"
+      ],
+      "size": [
+        {
+          "size_name": "Малый",
+          "price": 8130500
+        },
+        {
+          "size_name": "Средний",
+          "price": 10569650
+        },
+        {
+          "size_name": "Большой",
+          "price": 16261000
+        }
+      ],
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2021/10/150-%D1%81%D0%BC.webp?ver=2"
+    },
+    {
+      "id": 10,
+      "name": "Композиция «Росселла»",
+      "category": "Цветы в каробке",
+      "date": "2023-08-09",
+      "composition": [
+        "Розы"
+      ],
+      "size": [
+        {
+          "size_name": "Малый",
+          "price": 862500
+        },
+        {
+          "size_name": "Средний",
+          "price": 1121250
+        },
+        {
+          "size_name": "Большой",
+          "price": 1293750
+        }
+      ],
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2022/09/whatsapp-image-2022-09-07-at-07.51.webp?ver=2"
+    },
+    {
+      "id": 11,
+      "name": "Композиция «Между мной и тобой»",
+      "category": "Цветы в каробке",
+      "date": "2023-01-31",
+      "composition": [
+        "Розы"
+      ],
+      "size": [
+        {
+          "size_name": "Малый",
+          "price": 1097250
+        },
+        {
+          "size_name": "Средний",
+          "price": 1426425
+        },
+        {
+          "size_name": "Большой",
+          "price": 1645875
+        }
+      ],
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2021/10/45-%D0%B2-%D0%BA%D0%BE%D1%80%D0%BE%D0%B1%D0%BA%D0%B5.webp?ver=2"
+    },
+    {
+      "id": 12,
+      "name": "Композиция «Амур»",
+      "category": "Цветы в каробке",
+      "date": "2023-11-09",
+      "composition": [
+        "Розы"
+      ],
+      "size": [
+        {
+          "size_name": "Малый",
+          "price": 664700
+        },
+        {
+          "size_name": "Средний",
+          "price": 864110
+        },
+        {
+          "size_name": "Большой",
+          "price": 997050
+        }
+      ],
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2022/08/IMG_1375-min.webp?ver=2"
+    },
+    {
+      "id": 13,
+      "name": "Композиция «Bovetti»",
+      "category": "Цветы в корзине",
+      "date": "2023-08-23",
+      "composition": [
+        "Розы",
+        "Спрей розы",
+        "Альстромерии",
+        "Эвкалипт"
+      ],
+      "size": [
+        {
+          "size_name": "Малый",
+          "price": 4769910
+        },
+        {
+          "size_name": "Средний",
+          "price": 6200883
+        },
+        {
+          "size_name": "Большой",
+          "price": 7154865
+        }
+      ],
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2022/09/img_8664.webp?ver=2"
+    },
+    {
+      "id": 14,
+      "name": "77 роз в корзине",
+      "category": "Цветы в корзине",
+      "date": "2023-06-04",
+      "composition": [
+        "Розы"
+      ],
+      "size": [
+        {
+          "size_name": "Малый",
+          "price": 2064970
+        },
+        {
+          "size_name": "Средний",
+          "price": 2684461
+        },
+        {
+          "size_name": "Большой",
+          "price": 3097455
+        }
+      ],
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2021/09/77-%D1%80%D0%BE%D0%B7-%D0%B2-%D0%BA%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%B5-65000%D1%82%D0%B3.webp?ver=2"
+    },
+    {
+      "id": 15,
+      "name": "Композиция «White»",
+      "category": "Цветы в корзине",
+      "date": "2023-09-15",
+      "composition": [
+        "Хризантема"
+      ],
+      "size": [
+        {
+          "size_name": "Малый",
+          "price": 794220
+        },
+        {
+          "size_name": "Средний",
+          "price": 1032486
+        },
+        {
+          "size_name": "Большой",
+          "price": 1191330
+        }
+      ],
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2023/04/4cc78bc1-9066-4a04-9cc8-57e295acc5e1.webp?ver=2"
+    },
+    {
+      "id": 16,
+      "name": "Композиция «Рай на Земле»",
+      "category": "Цветы в корзине",
+      "date": "2023-03-24",
+      "composition": [
+        "Розы",
+        "Сирень",
+        "Лизиантусы",
+        "Гипсофилы"
+      ],
+      "size": [
+        {
+          "size_name": "Малый",
+          "price": 556000
+        },
+        {
+          "size_name": "Средний",
+          "price": 1858480
+        },
+        {
+          "size_name": "Большой",
+          "price": 2144400
+        }
+      ],
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2021/09/%D0%A0%D0%B0%D0%B9-%D0%BD%D0%B0-%D0%97%D0%B5%D0%BC%D0%BB%D0%B5-IMG_3595-2.webp?ver=2"
+    },
+    {
+      "id": 17,
+      "name": "Композиция «Ягодное разнообразие»",
+      "category": "Фруктовые",
+      "date": "2023-05-02",
+      "composition": [
+        "Клубника",
+        "Ежевика",
+        "Смородина",
+        "Малина",
+        "Голубика"
+      ],
+      "size": [
+        {
+          "size_name": "Малый",
+          "price": 556000
+        }
+      ],
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2023/08/yagodnoe-raznoobraziye.webp?ver=2"
+    },
+    {
+      "id": 18,
+      "name": "Композиция «Splash»",
+      "category": "Фруктовые",
+      "date": "2023-08-20",
+      "composition": [
+        "Клубника",
+        "Ежевика",
+        "Голубика"
+      ],
+      "size": [
+        {
+          "size_name": "Малый",
+          "price": 999000
+        }
+      ],
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2023/08/splash.webp?ver=2"
+    },
+    {
+      "id": 19,
+      "name": "Композиция «Клубничный оазис»",
+      "category": "Фруктовые",
+      "date": "2023-02-10",
+      "composition": [
+        "Клубника",
+        "Ежевика",
+        "Малина",
+        "Голубика"
+      ],
+      "size": [
+        {
+          "size_name": "Малый",
+          "price": 510000
+        }
+      ],
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2023/08/klubnichniy-oazis.webp?ver=2"
+    },
+    {
+      "id": 20,
+      "name": "Корзина «Сердце»",
+      "category": "Фруктовые",
+      "date": "2023-02-02",
+      "composition": [
+        "Клубника",
+        "Ежевика",
+        "Малина",
+        "Голубика"
+      ],
+      "size": [
+        {
+          "size_name": "Малый",
+          "price": 1531000
+        }
+      ],
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2023/08/korzina-serdc.webp?ver=2"
+    }
+  ],
+  "presents": [
+    {
+      "id": 1,
+      "name": "Спящий бегемот",
+      "category": "Мягкие игрушки",
+      "date": "20.01.2023",
+      "composition": [
+        "Мягкая игрушка"
+      ],
+      "price": 264730,
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2023/03/151482ec-4262-436b-b85e-bdc41d14feab_result.webp?ver=2"
+    },
+    {
+      "id": 2,
+      "name": "Плюшевый енот",
+      "category": "Мягкие игрушки",
+      "date": "13.8.2023",
+      "composition": [
+        "Мягкая игрушка"
+      ],
+      "price": 211770,
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2023/03/2ce0592b-724a-4cb4-86aa-8add2e8c8bf3_result.webp?ver=2"
+    },
+    {
+      "id": 3,
+      "name": "Медведь с сердечком",
+      "category": "Мягкие игрушки",
+      "date": "6.4.2023",
+      "composition": [
+        "Мягкая игрушка"
+      ],
+      "price": 264730,
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2023/03/79d1b03f-3ff5-428b-855d-4fd4553cac26_result.webp?ver=2"
+    },
+    {
+      "id": 4,
+      "name": "Зайчик с длинными ушами",
+      "category": "Мягкие игрушки",
+      "date": "02.06.2023",
+      "composition": [
+        "Мягкая игрушка"
+      ],
+      "price": 211770,
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2023/03/9225b8cd-4b8f-4e0f-8c46-3e5fd766de2c_result.webp?ver=2"
+    },
+    {
+      "id": 5,
+      "name": "Подарочный набор №2",
+      "category": "Подарочный набор",
+      "date": "26.07.2023",
+      "composition": [
+        "Виски",
+        "Фисташки",
+        "Чипсы",
+        "Колбаса",
+        "Гарлики",
+        "Конфеты ферреро"
+      ],
+      "price": 794220,
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2021/11/%D0%92%D0%B8%D1%81%D0%BA%D0%B8-07%D1%84%D0%B8%D1%81%D1%82%D0%B0%D1%88%D0%BA%D0%B8%D1%87%D0%B8%D0%BF%D1%81%D1%8B%D0%BA%D0%BE%D0%BB%D0%B1%D0%B0%D1%81%D0%BA%D0%B8-%D0%B4%D0%B2%D1%83%D1%85-%D0%B2%D0%B8%D0%B4%D0%BE%D0%B2%D0%B3%D0%B0%D1%80%D0%BB%D0%B8%D0%BA%D0%B8-25000%D1%82%D0%B3-1-1-min.webp?ver=2"
+    },
+    {
+      "id": 6,
+      "name": "Подарочный набор №4",
+      "category": "Подарочный набор",
+      "date": "25.07.2023",
+      "composition": [
+        "Мартини асти",
+        "Мед в банке",
+        "Орешки",
+        "Сыр в банке ",
+        "Конфеты ферреро",
+        "Конфеты мерси",
+        "Корица"
+      ],
+      "price": 794220,
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2021/11/%D0%BC%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%B8-%D0%B0%D1%81%D1%82%D0%B8%D0%BC%D0%B5%D0%B4%D0%BE%D1%80%D0%B5%D1%88%D0%BA%D0%B8%D1%81%D1%8B%D1%80%D1%84%D0%B5%D1%80%D0%B5%D1%80%D0%BE%D0%BC%D0%B5%D1%80%D1%81%D0%B8%D0%BA%D0%BE%D1%80%D0%B8%D1%86%D0%B0-25000%D1%82%D0%B3-1-1-min.webp?ver=2"
+    },
+    {
+      "id": 7,
+      "name": "Подарочный набор №16",
+      "category": "Подарочный набор",
+      "date": "6.4.2023",
+      "composition": [
+        "Купажированный шотландский виски",
+        "Бокал для виски",
+        "Фундук",
+        "Миндаль"
+      ],
+      "price": 629020,
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2022/02/Z6Qv-sNGh44-1-1-min.webp?ver=2"
+    },
+    {
+      "id": 8,
+      "name": "Подарочный набор №2",
+      "category": "Подарочный набор",
+      "date": "22.3.2023",
+      "composition": [
+        "Prosecco",
+        "десерт",
+        "мандарины",
+        "игрушки"
+      ],
+      "price": 949900,
+      "count": 0,
+      "status": "",
+      "image": "https://pro-buket.uz/wp-content/uploads/2021/11/%D0%BF%D1%80%D0%BE%D1%81%D0%B5%D0%BA%D0%BE%D0%B4%D0%B5%D1%81%D0%B5%D1%80%D1%82%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D0%B8%D0%BD%D1%8B%D0%B8%D0%B3%D1%80%D1%83%D1%88%D0%BA%D0%B8%D0%B5%D0%BB%D1%8C-23000%D1%82%D0%B3.webp?ver=2"
+    }
+  ],
+  "users": [],
+  "gallery": [
+    "https://pro-buket.uz/wp-content/uploads/2023/01/photo_2023-01-31_11-06-51_-360x524.webp?ver=2",
+    "https://rozyminsk.by/assets/images/products/298/%D0%B1%D1%83%D0%BA%D0%B5%D1%82-%D1%86%D0%B2%D0%B5%D1%82%D0%BE%D0%B2-34.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0vH7mC_OAMBAO28rGyY630CSr-zA17qhjKa6eWY6AbDEQ5dSfu7i5rgYTHsjaJ-NpLNQ&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwtw__o4H7MyDYooXqfBub-TesCLsh0_hVJmmctaz-SU8qm_M5od-SD21Xd5nyQ2OVSa4&usqp=CAU",
+    "https://dolinaroz.by/_next/image?url=https%3A%2F%2Fapi.dolinaroz.by%2Fwp-content%2Fuploads%2F2022%2F10%2Fbuket-iz-rozovyh-kustovyh-roz-madam-bombastik-minsk-dostavka-2.jpg&w=1920&q=75",
+    "https://www.moscvettorg.com/upload/resize_cache/iblock/5ae/999_999_14d11571e4295db598e18fe87b0046293/buket_tsvetov_love_story.jpg",
+    "https://i0.wp.com/uzflora.com/wp-content/uploads/2023/02/bouquets_uzflora_1.jpg?resize=324%2C324&ssl=1",
+    "https://rococo.flowers/wp-content/uploads/2020/01/%D0%BA%D0%B0%D0%BA%D0%BE%D0%B9-%D0%B1%D1%83%D0%BA%D0%B5%D1%82-%D0%BF%D0%BE%D0%B4%D0%B0%D1%80%D0%B8%D1%82%D1%8C-%D0%B4%D0%B5%D0%B2%D1%83%D1%88%D0%BA%D0%B5.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2M8Up64eQ1WKMwJbUq-or5MIEO_AzOfKaKnrGTcx20YgHUri45wOKygpnQU-0Gisdi88&usqp=CAU",
+    "https://cveti32.ru/wp-content/uploads/2021/04/delaem-krasivoe-foto-s-cvetami.jpg",
+    "https://mykaleidoscope.ru/x/uploads/posts/2022-09/thumbs/1663219559_56-mykaleidoscope-ru-p-tsveti-i-chuvstva-vkontakte-64.jpg",
+    "https://makilove.ru/upload/medialibrary/9fc/9fc3ee83fab6db9ea9e0e2db0055fcc7.jpg"
+  ],
+  "reviews": [
+    {
+      
+    }
+  ]
+}

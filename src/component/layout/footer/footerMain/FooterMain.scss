@@ -1,0 +1,50 @@
+.footer-main {
+  display: flex;
+  padding: 2.45% 0 2.98% 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  &__contact-title,
+  &__guest-title {
+    margin-bottom: 20px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__contact-items,
+  &__guest-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__contact-item {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 215px;
+
+    img {
+      width: 16px;
+      height: 16%;
+      object-fit: cover;
+    }
+  }
+
+  &__guest-item {
+    a {
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 400;
+      transition: 0.5s;
+      &:hover{
+        opacity: 0.5;
+      }
+    }
+  }
+}

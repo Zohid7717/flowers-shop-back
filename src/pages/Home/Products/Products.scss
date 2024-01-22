@@ -1,0 +1,49 @@
+.products {
+  background: #F9F8FB;
+
+  &__wrap {
+    padding: 8.69% 0px 6.22% 0px;
+    display: flex;
+    gap: 21px;
+    position: relative;
+    overflow-x: hidden;
+    z-index: 10;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  &__main-head{
+    width: 100%;
+  }
+
+  &__main-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+
+  &__show-more {
+    font-size: 18px;
+    background-color: transparent;
+    margin-top: 30px;
+  }
+  &__sort{
+    z-index: 10;
+    transition: 0.5s;
+    @media (max-width: 856px){
+      position: absolute;
+      top: 0;
+      right: -500%;
+    }
+    &.active{
+      right: 0;
+      top: 140px;
+    }
+  }
+}

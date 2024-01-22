@@ -1,0 +1,16 @@
+.advantage {
+  margin: 2.5% 0px 6.75% 0px;
+  &__swiper {
+  }
+
+  &__card {
+    width: 100%;
+    text-align: center;
+    height: 205px;
+
+    img {
+      width: 214px;
+      height: 205px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.sort-input {
+  padding: 16px 14px;
+  border-bottom: 1px solid #F2F2F2;
+
+  &__search {
+    width: 100%;
+    padding: 13px 25px;
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    color: #111111;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.5s;
+    &:focus {
+      box-shadow: 0px 0px 5px 3px rgb(48, 182, 14) inset;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.button {
+  margin-top: 22px;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  &>a{
+    padding: 13px;
+    color: #5B4A58;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: white;
+    width: 100%;
+    &:hover{
+      background-color: #F6FFF3; 
+    }
+  }
+
+}
