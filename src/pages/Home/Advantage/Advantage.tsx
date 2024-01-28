@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Navigation } from 'swiper/modules'
-import UContainer from '../../../component/ui/UContainer/UContainer';
+import {UContainer} from '../../../component/ui/UContainer/UContainer';
 import 'swiper/css';
 import 'swiper/scss/pagination';
 import 'swiper/scss/navigation';

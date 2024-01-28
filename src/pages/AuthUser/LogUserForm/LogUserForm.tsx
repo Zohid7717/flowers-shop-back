@@ -24,13 +24,13 @@ const LogUserForm: FC = () => {
   } = useForm<LogAdminFormType>({
     mode: 'onChange'
   })
-  dispatch(setFromPage(location.state?.from?.pathname || '/'))
+  
   
   useEffect(() => {
     if (isAuth) {
       navigate(fromPage, {replace: true})
     }
-  }, [isAuth])
+  }, [isAuth, navigate, fromPage])
 
   const onSubmit = handleSubmit((data) => {
     dispatch(loginUser(data))
@@ -41,6 +41,10 @@ const LogUserForm: FC = () => {
     reset()
     navigate(fromPage, {replace: true})
   }
+
+  useEffect(() => {
+    dispatch(setFromPage(location.state?.from?.pathname || '/'))
+  }, [isAuth, location, dispatch])
 
   return <div className='reg-form'>
     <p className="reg-form__title">Форма для регистрации администратора</p>

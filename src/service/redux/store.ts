@@ -13,6 +13,7 @@ import images from "./Slices/flowerImages/slice";
 import toast from "./Slices/toast/slice";
 import bouquet from "./Slices/bouquet/slice"
 import bouquets from "./Slices/bouquets/slice"
+import course from "./Slices/course/slice"
 
 export const store = configureStore({
   reducer: {
@@ -29,7 +30,8 @@ export const store = configureStore({
     images,
     toast,
     bouquet,
-    bouquets
+    bouquets,
+    course
   }
 })
 

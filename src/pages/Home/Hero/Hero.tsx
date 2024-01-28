@@ -5,7 +5,7 @@ import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 import './Hero.scss'
-import UContainer from '../../../component/ui/UContainer/UContainer';
+import {UContainer} from '../../../component/ui/UContainer/UContainer';
 
 const Hero: FC = () => {
 

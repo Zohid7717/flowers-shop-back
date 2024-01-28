@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import UContainer from '../../component/ui/UContainer/UContainer'
+import {UContainer} from '../../component/ui/UContainer/UContainer'
 import BreadCrumbs from '../../component/Breadcrumbs/BreadCrumbs'
 import RegUserForm from './RegUserForm/RegUserForm'
 import './RegUser.scss'

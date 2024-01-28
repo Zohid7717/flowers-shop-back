@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import UContainer from '../../component/ui/UContainer/UContainer'
+import {UContainer} from '../../component/ui/UContainer/UContainer'
 import img404 from '../../assets/notfound.avif'
 import { Link } from 'react-router-dom'
 import './NotFound.scss'

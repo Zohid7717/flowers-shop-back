@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 import ProductCardSkeleton from '../../../../component/Skeleton/ProductCard/ProductCardSkeleton'
 import ProductCard from './../ProductCard/ProductCard'
 import { useAppDispatch, useAppSelector } from '../../../../service/redux/hooks/hooks'
-import { BouquetType, getAllBouquets } from '../../../../service/redux/Slices/products/slice'
 import { sortByDate, sortByPriceDESC, sortByPriceABC, sortByPopularity } from '../../../../service/filterFunc/filterFunc'
 import './CardBlock.scss'
+import { getAllBouquets } from '../../../../service/redux/Slices/bouquets/slice'
 
 type CardBlockTypes = {
   sortHeadValue: string
@@ -13,8 +13,8 @@ type CardBlockTypes = {
 
 const CardBlock: FC<CardBlockTypes> = ({ sortHeadValue }) => {
   const inputValue = useAppSelector(state => state.inputValue.value)
-  const { list, loading } = useAppSelector((state) => state.dataProducts)
-  const [lastList, setLastList] = useState<BouquetType[]>([])
+  const list = useAppSelector(state => state.bouquets.list)
+  const loading = useAppSelector(state=>state.bouquets.loading)
   const listVariants = {
     visible: (i: number) => ({
       opacity: 1,
@@ -27,26 +27,27 @@ const CardBlock: FC<CardBlockTypes> = ({ sortHeadValue }) => {
   const dispatch = useAppDispatch()
 
   useEffect(() => {
-    dispatch()
-    console.log(list)
+    dispatch(getAllBouquets())
   }, [])
-
-  const bouquet = lastList.map((item, i) => (
-    <motion.div
-      key={item.id}
-      variants={listVariants}
-      initial='hidden'
-      animate='visible'
-      custom={i}
-    >
-      <ProductCard {...item} />
-    </motion.div>
-  ))
+  console.log(list)
+  
+  const bouquet = Array.isArray(list) ? list?.map((item, i) => (
+      <motion.div
+        key={i}
+        variants={listVariants}
+        initial='hidden'
+        animate='visible'
+        custom={i}
+      >
+        <ProductCard {...item} />
+      </motion.div>
+    )) : null
   const skeleton = [...new Array(3)].map((_, i) => <ProductCardSkeleton key={i} />)
   return <div className="products__main-list">
     {loading === true ?
-      skeleton :
-      bouquet}
+        skeleton :
+        bouquet
+    }
   </div>
 }
 

@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import UContainer from '../../component/ui/UContainer/UContainer'
+import {UContainer} from '../../component/ui/UContainer/UContainer'
 import BreadCrumbs from '../../component/Breadcrumbs/BreadCrumbs'
 import LogUserForm from './LogUserForm/LogUserForm'
 import { Link } from 'react-router-dom'

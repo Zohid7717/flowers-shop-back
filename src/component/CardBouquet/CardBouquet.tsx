@@ -3,7 +3,7 @@ import { useAppDispatch, useAppSelector } from '../../service/redux/hooks/hooks'
 import CardBouquetImg from './CardBouquetImg/CardBouquetImg';
 import { getBouquet } from '../../service/redux/Slices/bouquet/slice';
 import { useParams } from 'react-router-dom';
-import UContainer from '../ui/UContainer/UContainer';
+import {UContainer} from '../ui/UContainer/UContainer';
 import CardBouquetInfo from './CardBouquetInfo/CardBouquetInfo';
 
 import "./CardBouquet.scss";

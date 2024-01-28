@@ -19,6 +19,7 @@ const UserInfo = React.lazy(() => import('./pages/Cabinet/UserInfo/UserInfo'))
 const AddBouquet = React.lazy(() => import('./pages/Cabinet/AddBouquet/AddBouquet'))
 const CardBouquet = React.lazy(() => import('./component/CardBouquet/CardBouquet'))
 const AddPresent = React.lazy(() => import('./pages/Cabinet/AddPresent/AddPresent'))
+const Setting = React.lazy(() => import('./pages/Cabinet/SettingBlock/SettingBlock'))
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<MainLayout />}>
@@ -78,6 +79,13 @@ const router = createBrowserRouter(createRoutesFromElements(
           <p>Loading...</p>
         }>
           <AddPresent />
+        </Suspense>
+      } />
+      <Route path='setting' element={
+        <Suspense fallback={
+          <p>Loading...</p>
+        }>
+          <Setting />
         </Suspense>
       } />
 

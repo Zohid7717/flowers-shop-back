@@ -1,6 +1,6 @@
 import { FC, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import UContainer from '../../../ui/UContainer/UContainer'
+import {UContainer} from '../../../ui/UContainer/UContainer'
 import userIcon from '../../../../assets/icon/user-icon.svg'
 import logo from '../../../../assets/icon/logo-icon.svg'
 

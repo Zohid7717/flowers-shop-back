@@ -1,8 +1,7 @@
 import { FC, useState, useRef } from 'react'
 import SortHead from './SortHead/SortHead'
 import { useAppDispatch} from '../../../service/redux/hooks/hooks'
-import { fetchByFilter } from '../../../service/redux/Slices/products/slice'
-import UContainer from '../../../component/ui/UContainer/UContainer'
+import {UContainer} from '../../../component/ui/UContainer/UContainer'
 
 import ProductSort from './ProductSort/ProductSort'
 import { showMore } from '../../../service/redux/Slices/displayLimit/slice'
@@ -34,7 +33,7 @@ const Products: FC = () => {
   const handleShowMore = () => {
     dispatch(showMore())
   }
-  dispatch(fetchByFilter())
+  
   return <div className='products'>
     <UContainer>
       <div className="products__wrap">

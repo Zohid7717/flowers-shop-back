@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import UContainer from '../../ui/UContainer/UContainer'
+import {UContainer} from '../../ui/UContainer/UContainer'
 import { Link } from 'react-router-dom'
 import FooterMain from './footerMain/FooterMain'
 

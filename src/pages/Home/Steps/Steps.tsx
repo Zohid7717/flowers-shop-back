@@ -2,7 +2,7 @@ import { FC } from 'react'
 import steps_bg1 from '../../../assets/service-img/Group23.png'
 import steps_bg2 from '../../../assets/service-img/Group24.png'
 import './Steps.scss'
-import UContainer from '../../../component/ui/UContainer/UContainer'
+import {UContainer} from '../../../component/ui/UContainer/UContainer'
 
 type stepsObjType = {
   number: number,

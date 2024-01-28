@@ -49,18 +49,7 @@ export const addBouquet = createAsyncThunk<ResToCreate, ReqToCreate>(
   }
 )
 
-//получаенм получаем все букеты
-export const getAllBouquets = createAsyncThunk<BouquetType[]>(
-  'bouquet/getAllBouquets',
-  async (_, { rejectWithValue }) => {
-    try {
-      const { data } = await axios.get('/bouquets')
-      return data
-    } catch (error) {
-      return rejectWithValue(error)
-    }
-  }
-)
+
 
 //получения одного букета
 export const getBouquet = createAsyncThunk<ResToGetOne, ReqToGetById>(
@@ -124,21 +113,7 @@ export const bouquetSlice = createSlice({
         state.loading = false
         state.status = action.error ? action.payload?.response.data.message : null
       })
-      //get bouquets
-      // .addCase(getAllBouquets.pending, (state) => {
-      //   state.loading = true
-      //   state.error = null
-      // })
-      // .addCase(getAllBouquets.fulfilled, (state, action) => {
-      //   state.loading = false
-      //   state.list = action.payload
-      //   state.success = true
-      // })
-      // .addCase(getAllBouquets.rejected, (state, action: RejectedAction) => {
-      //   state.loading = false
-      //   state.error = action.payload
-      //   state.success = false
-      // })
+      
   },
 })
 

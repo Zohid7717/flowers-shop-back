@@ -1,24 +1,32 @@
-import { FC, useState, useEffect } from 'react'
-import UContainer from '../../component/ui/UContainer/UContainer'
+import { FC, useEffect, useState } from 'react'
+import {UContainer} from '../../component/ui/UContainer/UContainer'
 import BreadCrumbs from '../../component/Breadcrumbs/BreadCrumbs'
 import { useAppDispatch, useAppSelector } from '../../service/redux/hooks/hooks'
-import editIcon from '../../assets/icon/edit-icon.svg'
 import { logout } from "../../service/redux/Slices/auth/slice";
+import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom'
 
 import './Cabinet.scss'
-import { Link, Outlet, useNavigate } from 'react-router-dom'
 
-const doorHangers = [
-  { title: 'info' },
-  { title: 'setting' },
-  { title: 'bouquet' },
-  { title: 'gift' },
-  { title: 'orders' },
+const adminDoorHangers = [
+  { title: 'Профиль', path: 'info' },
+  { title: 'Создать букет', path: 'addbouquet' },
+  { title: 'Создать подарок', path: 'addpresent' },
+  { title: 'Настройки', path: 'setting' },
+  { title: 'Сменит пароль', path: 'changepass' },
+
+]
+
+const userDoorHangers = [
+  { title: 'Профиль', path: 'info' },
+  { title: 'Мои заказы', path: 'orders' },
+  { title: 'Мои отзывы', path: 'myreviews' },
+  { title: 'Сменит пароль', path: 'changepass' },
 ]
 
 const Cabinet: FC = () => {
   const Admin = useAppSelector(state => state.auth.user?.admin)
-  const [activeDoor, setActiveDoor] = useState('info')
+  const location = useLocation()
+  const [activeDoor, setActiveDoor] = useState('')
   const dispatch = useAppDispatch()
   const navigate = useNavigate()
   const handlerLogout = () => {
@@ -28,7 +36,12 @@ const Cabinet: FC = () => {
   }
 
   useEffect(() => {
-  }, [Admin])
+    const activePath = location.pathname.split('/').pop()
+    if (activePath) {
+      setActiveDoor(activePath)
+    }
+  }, [location])
+
   return <div className='register'>
     <UContainer>
       <div className="register__wrap">
@@ -38,41 +51,31 @@ const Cabinet: FC = () => {
         <div className="register__menu">
           <p className='register__title'>Личный кабинет</p>
           <div className="user-menu">
-            <div className={
-              activeDoor === 'info' || activeDoor === 'setting' ?
-                "user-menu__settings activeDoor" :
-                "user-menu__settings"
-            }>
-              <Link to='info' onClick={() => setActiveDoor('info')} >Профиль</Link>
-              <button className="user-menu__set" onClick={() => setActiveDoor('setting')} >
-                <img src={editIcon} alt="edit-icon" />
-              </button>
-            </div>
-            {Admin ? <Link to='addbouquet' onClick={() => setActiveDoor('bouquet')} className={activeDoor === 'bouquet' ? 'activeDoor' : ''}>
-              Добавить букет
-            </Link> : ''}
-            {Admin ?
-                <Link to='addpresent' onClick={() => setActiveDoor('gift')} className={activeDoor === 'gift' ? 'activeDoor' : ''} >
-                  Добавить подарок
-                </Link> :
-              <div className={activeDoor === 'orders' ? 'activeDoor' : ''}>
-                <button onClick={() => setActiveDoor('orders')} >
-                  Мои заказы
-                </button>
-              </div>
+            {
+              Admin ?
+                adminDoorHangers.map((door, index) => (
+                  <Link key={index} to={door.path} className={activeDoor === door.path ? 'activeDoor' : ''}>
+                    {door.title}
+                  </Link>
+                )) :
+                userDoorHangers.map((door, index) => (
+                  <Link key={index} to={door.path} className={activeDoor === door.path ? 'activeDoor' : ''}>
+                    {door.title}
+                  </Link>
+                ))
             }
-            <div className='exit'>
-              <button onClick={handlerLogout} >
-                Выход
-              </button>
-            </div>
+            <Link to='/' onClick={handlerLogout} >
+              Выход
+            </Link>
           </div>
         </div>
         <div className="register__main">
           <div className="desktop-crumb">
             <BreadCrumbs />
           </div>
-          <Outlet />
+          <div className='cabinet__workspace'>
+            <Outlet />
+          </div>
         </div>
       </div>
     </UContainer>

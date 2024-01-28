@@ -10,7 +10,6 @@ import { resetProductPrice } from '../../../../service/redux/Slices/productPrice
 import { setResetFilterFalse, setResetFilterTrue } from '../../../../service/redux/Slices/resetFilter/slice'
 import { resetProductItems } from '../../../../service/redux/Slices/productItems/slice'
 import './ProductSort.scss'
-import {getAllBouquets } from '../../../../service/redux/Slices/products/slice'
 
 const ProductSort: FC = () => {
   const [isDisabled, setIsDisabled] = useState<boolean>(false)
@@ -30,7 +29,6 @@ const ProductSort: FC = () => {
     if (sortInputValue.length > 3) {
       setIsDisabled(true)
       dispatch(setInput(sortInputValue))
-      dispatch(getAllBouquets())
     } else {
       setIsDisabled(false)
       dispatch(setInput(''))

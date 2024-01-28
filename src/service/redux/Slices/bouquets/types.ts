@@ -1,4 +1,4 @@
-interface BouquetsType {
+export interface BouquetsType {
   id: string
   name: string
   price: number
@@ -11,4 +11,10 @@ export interface BouquetStateType {
   loading: boolean
   status: string | null
   success: boolean
+}
+//тип получаемого ответа
+export interface ResBouquets {
+  success: boolean
+  sentInfo: BouquetsType[]
+  message: string
 }

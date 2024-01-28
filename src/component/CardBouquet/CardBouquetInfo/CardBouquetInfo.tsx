@@ -21,7 +21,6 @@ const CardBouquetInfo: FC<CardBouquetInfoProps> = ({ bouquet }) => {
   const handleDec = () => {
     setCountBouquet(countBouquet - 1)
   }
-  console.log(checkedSize)
   return <div className='bouquet-info'>
     <h4>{bouquet?.name}</h4>
     <p>Размер:</p>

@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import {Link} from 'react-router-dom'
-import UContainer from '../../../ui/UContainer/UContainer'
+import {UContainer} from '../../../ui/UContainer/UContainer'
 import locIcon from "../../../../assets/icon/location-icon.svg";
 import whatsAppIcon from "../../../../assets/icon/whatsApp-icon.svg";
 import cartIcon from "../../../../assets/icon/cart-icon.svg";

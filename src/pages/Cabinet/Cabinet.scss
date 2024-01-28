@@ -7,11 +7,6 @@
   flex-direction: column;
   overflow: hidden;
 
-  &__settings {
-    display: flex;
-    justify-content: space-between;
-  }
-
   &>a {
     color: #5B4A58;
     font-family: Literal;
@@ -22,37 +17,17 @@
     padding: 6px 12px 6px 20px;
     display: flex;
     align-items: center;
+    &:first-child{
+      padding-top: 15px;
+    }
+    &:last-child{
+      padding-bottom: 15px;
+    }
+    &:not(:last-child){
+      border-bottom: 1px solid #E0E0E0;
+    }
   }
 
-  &>div {
-    padding: 6px 12px 6px 20px;
-    display: flex;
-    align-items: center;
-  }
-
-  &>div a:not(.user-menu__set) {
-    color: #5B4A58;
-    font-family: Literal;
-    font-size: 16px;
-    font-weight: 700;
-    background-color: transparent;
-    text-align: left;
-  }
-
-
-  div:not(:last-child) {
-    border-bottom: 1px solid #E0E0E0;
-  }
-
-  &__set {
-    width: 26px;
-    height: 26px;
-    background-color: #F2F2F2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-  }
 }
 
 .activeDoor {
