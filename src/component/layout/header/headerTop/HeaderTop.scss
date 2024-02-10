@@ -1,15 +1,16 @@
 .header-top {
   background: #5B4A58;
-  height: 40px;
-  @media (max-width: 730px) {
-    height: 35px;
-  }
-
+  
+  
   &__wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    height: 40px;
+    @media (max-width: 730px) {
+      height: 35px;
+    }
   }
 
   &__address {

@@ -1,3 +1,8 @@
+.register{
+  &__menu{
+    min-height: calc(100vh - 126.98px - 425.65px);
+  }
+}
 .button {
   margin-top: 22px;
   display: flex;

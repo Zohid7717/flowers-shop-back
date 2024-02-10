@@ -3,6 +3,7 @@ import { BouquetType } from '../../../utils/types'
 import cartIcon from "../../../assets/icon/cart-icon.svg";
 
 import './CardBouquetInfo.scss'
+import { useAppSelector } from '../../../service/redux/hooks/hooks';
 
 type CardBouquetInfoProps = {
   bouquet: BouquetType | null
@@ -12,6 +13,8 @@ const CardBouquetInfo: FC<CardBouquetInfoProps> = ({ bouquet }) => {
   const inputCheckSize = useRef<HTMLInputElement | null>(null)
   const [checkedSize, setCheckedSize] = useState<string | null>(null)
   const [countBouquet, setCountBouquet] = useState<number>(1)
+  const isAdmin = useAppSelector(state => state.auth.admin)
+  console.log(isAdmin)
   const handleCheckSize = (arg: string | null) => {
     setCheckedSize(arg)
   }
@@ -56,29 +59,36 @@ const CardBouquetInfo: FC<CardBouquetInfoProps> = ({ bouquet }) => {
         ))}
       </ul>
     </div>
-    <div className="bouquet-info__btn">
-      <div className="bouquet-info__count">
-        <button className='dec-bouquet' onClick={handleDec} disabled={countBouquet < 2}></button>
-        <p>{countBouquet}</p>
-        <button className='inc-bouquet' onClick={handleInc}></button>
-      </div>
-      <div className="bouquet-info__cart">
-        <div>
-          <p className='bouquet-info__cart-text green'>Сумма:</p>
-          <p className='bouquet-info__cart-price'>сум</p>
+    {
+      !isAdmin ?
+        <div className='admin-btn'>
+          <button>Удалить</button>
+          <button>Изменить</button>
+        </div> :
+        <div className="bouquet-info__btn">
+          <div className="bouquet-info__count">
+            <button className='dec-bouquet' onClick={handleDec} disabled={countBouquet < 2}></button>
+            <p>{countBouquet}</p>
+            <button className='inc-bouquet' onClick={handleInc}></button>
+          </div>
+          <div className="bouquet-info__cart">
+            <div>
+              <p className='bouquet-info__cart-text green'>Сумма:</p>
+              <p className='bouquet-info__cart-price'>сум</p>
+            </div>
+            <button
+              disabled={!checkedSize}
+              onClick={() => console.log('ok')}
+              className={
+                checkedSize ? 'bouquet-info__cart-btn UBtn'
+                  : 'bouquet-info__cart-btn UBtn-disable'
+              }>
+              <img src={cartIcon} alt="cart icon" />
+              В карзину
+            </button>
+          </div>
         </div>
-        <button
-          disabled={!checkedSize}
-          onClick={()=>console.log('ok')}
-          className={
-          checkedSize ? 'bouquet-info__cart-btn UBtn'
-              : 'bouquet-info__cart-btn UBtn-disable'
-          }>
-          <img src={cartIcon} alt="cart icon" />
-          В карзину
-        </button>
-      </div>
-    </div>
+    }
   </div>
 }
 

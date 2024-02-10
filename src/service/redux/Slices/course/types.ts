@@ -1,12 +1,12 @@
 export interface ReqCourseInfo {
   name: string
-  currentRate: number
+  course: number
 }
 
 export interface ResCourseInfo {
   success: boolean
   message: string
-  course: ReqCourseInfo[]
+  courses: ReqCourseInfo[]
 }
 
 export interface CourseSliceType{

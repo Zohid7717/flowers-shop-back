@@ -4,6 +4,9 @@
   border-radius: 10px;
   padding: 20px 20px 15px 20px;
   text-align: center;
+  @media (max-width: 808px){
+    border-radius: 0;
+  }
 
   h2 {
     color: #FFF;
@@ -25,33 +28,112 @@
 
   &__main {
     margin: 20px 0 12px;
+    height: 55px;
   }
 
   &__line-trunk {
     width: 100%;
     border-radius: 7.5px;
-    background: #E0E0E0;
-    height: 15px;
   }
 
   &__line-order {
-    min-width: 15px;
-    max-width: 100%;
+    display: flex;
+    height: 100%;
+  }
+
+  &__line-fake {
+    margin-right: -15px;
+    border-radius: 10px ;
+    background: #6AAE55;
+    height: 15px;
+    position: relative;
+  }
+
+  &__wrap {
+    width: 100%;
+  }
+
+  &__line-real-wrap {
+    background: #E0E0E0;
+    height: 15px;
     border-radius: 10px;
+  }
+
+  &__line-real {
+    border-radius: 10px;
+    max-width: 100%;
+    min-width: 15px;
     background: #6AAE55;
     height: 100%;
     position: relative;
+    
     &::after {
       content: '';
       display: block;
       width: 15px;
       height: 15px;
       border-radius: 50%;
-      border: 2px solid#FFF;
+      border: 2px solid #FFF;
       background: #F2994A;
       position: absolute;
       top: 0;
       right: 0;
     }
+  }
+
+  &__items {
+    position: relative;
+  }
+
+  &__item {
+    text-align: right;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-right: 7px;
+    position: absolute;
+    transform: translate(-100%);
+    white-space: nowrap;
+    
+    & p:first-child {
+      font-size: 12px;
+      color: #BDBDBD;
+    }
+    
+    & p:last-child {
+      color: #828282;
+      font-size: 14px;
+    }
+    &::after{
+      content: '';
+      display: block;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background-color: #828282;
+      position: absolute;
+      right: 3px;
+      top: -12px;
+    }
+  }
+  &__item-line{
+    padding: 7px 4px 0 0;
+    border-right: 1px solid #E0E0E0;
+    height: 100%;
+  }
+
+}
+
+.active-discount{
+  & p:nth-child(1){
+    color: #5b4a58;
+  }
+  & p:nth-child(2){
+    color: #6AAE55;
+  }
+  &::after{
+    border: 1px solid white;
+    background-color: #eb5757;
   }
 }

@@ -6,9 +6,14 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 15px;
   }
 
   &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
     button{
       padding: 10px 20px;
     }

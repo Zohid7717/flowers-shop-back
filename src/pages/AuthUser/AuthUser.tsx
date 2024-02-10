@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import './AuthUser.scss'
 
 const AuthUser: FC = () => {
+  
   return <div className='register'>
     <UContainer>
       <div className="register__wrap">

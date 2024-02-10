@@ -2,6 +2,9 @@
   padding: 21px 29px 29px;
   background-color: #fff;
   border-radius: 10px;
+  @media (max-width: 808px){
+    border-radius: 0;
+  }
 
   &__head {
     display: flex;

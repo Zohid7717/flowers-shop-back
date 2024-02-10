@@ -1,6 +1,7 @@
 import { FC, useEffect, useState } from 'react'
 import Toast from './Toast'
 import { useAppSelector } from '../../service/redux/hooks/hooks'
+import './Toast.scss'
 
 const ToastContainer: FC = () => {
   const userStatus = useAppSelector(state => state.auth.status)

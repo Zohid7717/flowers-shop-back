@@ -5,9 +5,14 @@ import { RejectedAction } from '../../../../utils/types';
 export type discountType = {
   _id: string;
   title: string;
-  total: number | boolean;
+  total: number;
   percent: number | boolean;
   status: boolean | number;
+}
+
+type ResData = {
+  data: discountType[]
+  message: string
 }
 
 type discountStateType = {
@@ -30,7 +35,7 @@ export const getDiscounts = createAsyncThunk(
 )
 
 //изменения скидок
-export const updateDiscount = createAsyncThunk<string, discountType>(
+export const updateDiscount = createAsyncThunk<ResData, discountType>(
   'dicount/updateDiscount',
   async ({ _id, title, total, percent, status }, { rejectWithValue }) => {
     try {
@@ -57,6 +62,7 @@ const discountSlice = createSlice({
   reducers: {},
   extraReducers(builder) {
     builder
+      //получение списка скидок
       .addCase(getDiscounts.pending, (state) => {
         state.loading = true
       })
@@ -73,7 +79,8 @@ const discountSlice = createSlice({
       })
       .addCase(updateDiscount.fulfilled, (state, action) => {
         state.loading = false
-        state.status = action.payload
+        state.list = action.payload.data
+        state.status = action.payload.message
       })
       .addCase(updateDiscount.rejected, (state, action: RejectedAction) => {
         state.loading = false

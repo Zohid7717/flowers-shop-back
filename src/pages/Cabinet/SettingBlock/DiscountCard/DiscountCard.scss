@@ -1,0 +1,47 @@
+.setting {
+  &__discount-form {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    align-items: end;
+    gap: 15px;
+  }
+
+  &__discount-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &>label {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      input {
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+        padding: 10px 13px;
+        background: #fafafa;
+        transition: 0.5s;
+        &:focus{
+          box-shadow: 0px 0px 15px 1px #6AAE55;
+        }
+      }
+    }
+
+    &>div label {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  & button {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+}

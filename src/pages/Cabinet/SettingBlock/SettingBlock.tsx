@@ -1,13 +1,12 @@
 import { FC, useEffect, useState } from 'react'
-import './SettingBlock.scss'
 import { useAppDispatch, useAppSelector } from '../../../service/redux/hooks/hooks'
-import { discountType, getDiscounts, updateDiscount } from '../../../service/redux/Slices/discount/slice'
+import { getDiscounts } from '../../../service/redux/Slices/discount/slice'
 import { getCourse } from '../../../service/redux/Slices/course/slice'
-import { useForm } from "react-hook-form";
-import { setMessage } from '../../../service/redux/Slices/toast/slice'
-
-type DiscountField = keyof discountType;
-
+import DiscountCard from './DiscountCard/DiscountCard'
+import DiscountSkeleton from '../../../component/Skeleton/DiscountSkeleton/DiscountSkeleton'
+import { motion } from "framer-motion";
+import './SettingBlock.scss'
+import CourseCard from './CourseCard/CourseCard'
 
 const SettingBlock: FC = () => {
   const discountList = useAppSelector(state => state.discount.list)
@@ -16,83 +15,58 @@ const SettingBlock: FC = () => {
 
   const courseList = useAppSelector(state => state.course.list)
   const courseLoading = useAppSelector(state => state.course.loading)
+  const listVariants = {
+    visible: (i: number) => ({
+      opacity: 1,
+      transition: {
+        delay: i * 0.1,
+      }
+    }),
+    hidden: { opacity: 0 }
+  }
   const dispatch = useAppDispatch()
-  const {
-    register,
-    handleSubmit,
-    setValue
-    // formState: { errors, isValid }
-  } = useForm({
-    mode: 'onChange'
-  })
+
 
   useEffect(() => {
     dispatch(getDiscounts())
     dispatch(getCourse())
   }, [dispatch])
 
+
   useEffect(() => {
-    setDiscountListState([...discountList])
-  }, [discountList])
-  console.log(discountList)
-  console.log(discountListState)
-
-
-  const onSubmit = (index: number)=> handleSubmit((data) => {
-    try {
-      dispatch(updateDiscount(data.discounts[index]))
-    } catch (error) {
-      
+    if (discountList) {
+      setDiscountListState([...discountList])
     }
-    console.log(data.discounts[index])
-  })
+  }, [discountList])
 
-  const handleInputChange = (index: number, field: string, value: number | boolean | string) => {
-    const updatedDiscountList: discountType[] = [...discountListState]
-    updatedDiscountList[index] = { ...updatedDiscountList[index], [field]: value }
-    console.log(updatedDiscountList)
-  }
+  const discountBox = Array.isArray(discountListState) ? discountListState.map((discount, index) => (
+    <motion.div
+      key={index}
+      variants={listVariants}
+      initial='hidden'
+      animate='visible'
+      custom={index}
+    >
+      <DiscountCard key={index} index={index} discount={discount} discountListState={discountListState} setDiscountListState={ setDiscountListState} />
+    </motion.div>
+  )) : null
 
   return <div className='setting'>
     <div className="setting__discount">
       <p>Настройка скидок:</p>
-      {discountListState.map((discount, index) => (
-        <form onSubmit={onSubmit(index)}>
-          <div key={index} className='setting__discount-card'>
-            <div>
-              <p>{discount.title}</p>
-              <input
-                type="checkbox"
-                defaultChecked={typeof (discount.status) === 'boolean' ? discount.status : false}
-                {...register(`discounts.${index}.status` as const)}
-                onChange={(e) => handleInputChange(index, 'status', e.target.checked)}
-              />
-            </div>
-            <label>
-              Сумма скидки:
-              <input
-                type="text"
-                defaultValue={discount.total.toString()}
-                {...register(`discounts.${index}.total` as const)}
-                onChange={(e) => handleInputChange(index, 'total', e.target.value)}
-              />
-            </label>
-            <label>
-              Процент скидки:
-              <input
-                type="text"
-                defaultValue={discount.percent.toString()}
-                {...register(`discounts.${index}.percent` as const)}
-                onChange={(e) => handleInputChange(index, 'percent', e.target.value)}
-              />
-            </label>
-            <input type="text" value={discount._id} hidden {...register(`discounts.${index}._id` as const)} />
-          </div>
-          <button type='submit'>Изменить</button>
-        </form>
-      ))}
+      <div className="setting__discount-form-wrap">
+        {discountLoading === true ?
+          <DiscountSkeleton /> :
+          discountBox
+        }
+      </div>
     </div>
-    <div className="setting__course">cou</div>
+    <div className="setting__course">
+      <p>Настройка курса:</p>
+      <div className="setting__course-form-wrap">
+        <CourseCard/>
+      </div>
+    </div>
   </div>
 }
 

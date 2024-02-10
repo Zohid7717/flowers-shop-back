@@ -1,8 +1,12 @@
 .add-bouquet {
+  margin-bottom: 20px;
   &__wrap {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    @media (max-width: 886px){
+      flex-direction: column;
+    }
   }
 
   &__form {

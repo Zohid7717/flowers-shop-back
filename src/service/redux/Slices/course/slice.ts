@@ -22,9 +22,9 @@ export const getCourse = createAsyncThunk(
 //Меняем курс доллара
 export const updateCourse = createAsyncThunk<ResCourseInfo, ReqCourseInfo>(
   'course/updateCourse',
-  async ({ name, currentRate }, { rejectWithValue }) => {
+  async ({ name, course }, { rejectWithValue }) => {
     try {
-      const { data } = await axios.put('/course/updatecourse', { name, currentRate })
+      const { data } = await axios.put('/course/updatecourse', { name, course })
       if (!data) {
         throw new Error("Произошло ошибка при обработке данных!")
       }
@@ -55,7 +55,7 @@ const courseSlice = createSlice({
       .addCase(getCourse.fulfilled, (state, action) => {
         state.loading = false
         state.success = action.payload.success
-        state.list = action.payload.course
+        state.list = action.payload.courses
       })
       .addCase(getCourse.rejected, (state, action: RejectedAction) => {
         state.loading = false
@@ -68,7 +68,7 @@ const courseSlice = createSlice({
       })
       .addCase(updateCourse.fulfilled, (state, action) => {
         state.loading = false
-        state.list = action.payload.course
+        state.list = action.payload.courses
         state.success = action.payload.success
         state.status = action.payload.message
       })
